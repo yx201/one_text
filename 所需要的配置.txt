@@ -1,9 +1,3 @@
-后续还有最新版本，请持续关注东阁以获取
-https://oo1o.cn
-
-
-模版消息的标题就是你推送时显示的标题
-模版消息内容复制下方的代码
 
 {{date.DATA}}
 🌍地区：{{region.DATA}}
@@ -35,10 +29,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
     
-      - name: Set up Python 3.9
+      - name: Set up Python 3.7
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9.1
+          python-version: 3.7.1
       - name: Set timezone
         run: |
           cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
